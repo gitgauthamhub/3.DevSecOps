@@ -111,6 +111,7 @@ https:
 heads
 
 
+==============================================================
 awk command
 ------------
 echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'
