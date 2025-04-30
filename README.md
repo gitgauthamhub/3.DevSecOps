@@ -18,10 +18,13 @@ $ cd c/devops/
 $ ssh -i daws-84s/daws-84s ec2-user@44.222.158.108                          Note :  This is called  Relative Path
 
 
+$ sudo su                                                                   Note : $ ==> Normal User
+# exit                                                                      Note : # ==> root  /admin   /super user
 
-$ --> normal user
-# --> root/admin/super user
-/root --> root user home directory
+$ sudo su - 
+$ pwd     
+        /root ==> root user home directory
+# exit 
 
 command <options> <inputs>
 
