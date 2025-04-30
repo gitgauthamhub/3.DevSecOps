@@ -114,13 +114,20 @@ https://raw.githubusercontent.com/daws-84s/notes/refs
 
 
 ==============================================================
-awk command
-------------
-echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'
+awk command ====== echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'
 
-log files --> tail -f <log-file>
+[ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'
+https:
+[ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $NF}'
+session-02.txt
 
+
+log files ==> head -f <log-file>
+log files ==> tail -f <log-file>
 find <where to search> -name <file-name>
+
+$ find . -name "users"
+$ find . -name "*se*"
 
 vim --> visually improved
 
