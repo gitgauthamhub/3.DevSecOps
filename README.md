@@ -26,14 +26,15 @@ $ pwd
         /root ==> root user home directory
 # exit 
 
+==============================================================
 command <options> <inputs>
 / ==> root directory
 $ cd /
 $ ls -l                                                                    Note : ls means Long List 
 
 
+============================================================== 
 $ ls           ==> help list info about the FILES
- 
 $ ls -l        ==> long listing format in alphabetical order
 $ ls -lr       ==> long li sting format in reverse alphabetical order
 $ ls -lt       ==> latest files on top
@@ -41,20 +42,27 @@ $ ls -ltr      ==> latest at bottom
 $ ls -la       ==> all files including hidden files and folders
 
 
-touch <file-name> --> creates empty file
+==============================================================
+$ touch devops.txt    ==> creates empty file                              Note : touch <file-name>   ==> creates empty file  
+  
+$ cat > devops.txt   ==> type text, enter and ctrl+d                      Note : cat > <file-name> --> type text, enter and  ==> ctrl+d
+$ cat devops.txt                                                          previous content will be replaced
 
-cat > <file-name> --> type text, enter and ctrl+d
-previous content will be replaced
-cat >> <file-name> --> appends text to previous content
+
+$ cat >> devops.txt 
+$ cat devops.txt                                                         Note : >   ==> usually called as redirection
 
 
-> --> usually called as redirection
+==============================================================
+$ mkdir  daws84s                                                        mkdir <name> ==> Creates Directory
+$ ls -l
 
-mkdir <name> --> creates directory
-rmdir --> remove empty directory
-rm -f --> forcefully removes file
-rm -rf --> recursively forcefully delete the files and folders inside too
+$ rmdir     ==> Remove empty directory
+$ rm -f     ==> Forcefully removes file
+$ rm -rf    ==> Recursively forcefully delete the files and folders inside too
 
+
+==============================================================
 CRUD --> create read update delete
 
 cp <source> <destination> --> copy files/folders
