@@ -7,7 +7,15 @@ Goto the path : $ pwd  >> $ ls -l
 
 $ ssh -i daws-84s ec2-user@44.222.158.108
 
-$ /c/devops/daws-84s/daws-84s ec2-user@44.22.158.108 ==> This is called  FULL PATH
+$ ssh -i /c/devops/daws-84s/daws-84s ec2-user@44.22.158.108                  Note :  This is called  FULL PATH
+
+$ exit 
+$ cd                                                                  Note : This is User Directory 
+$ ls 
+
+$ ssh -i /c/devops/daws-84s/daws-84s ec2-user@44.222.158.108
+
+
 
 $ --> normal user
 # --> root/admin/super user
