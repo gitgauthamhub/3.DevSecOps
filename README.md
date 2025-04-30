@@ -109,6 +109,8 @@ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02
 https:
 [ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f7
 heads
+[ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1-6      Note : 1/6 Here to show
+https://raw.githubusercontent.com/daws-84s/notes/refs
 
 
 ==============================================================
