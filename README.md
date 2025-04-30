@@ -63,13 +63,13 @@ $ rm -rf    ==> Recursively forcefully delete the files and folders inside too
 
 
 ==============================================================
-CRUD --> create read update delete
+CRUD ==> Create Read Update Delete
 
-cp <source> <destination> --> copy files/folders
-mv <source> <destination> --> cut and paste
+cp <source> <destination>   ==> copy files/folders
+mv <source> <destination>   ==> cut and paste
 
-wget <URL> --> downloads the file
-curl <URL> --> shows on the screen
+wget <URL>   ==> downloads the file
+curl <URL>   ==> shows on the screen
 
 cat <file-name> | grep <word-to-search>
 grep <word-to-search> <file>
