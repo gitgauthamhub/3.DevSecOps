@@ -50,11 +50,11 @@ $ cat devops.txt                                                          previo
 
 
 $ cat >> devops.txt 
-$ cat devops.txt                                                         Note : >   ==> usually called as redirection
+$ cat devops.txt                                                          Note : >   ==> usually called as redirection
 
 
 ==============================================================
-$ mkdir  daws84s                                                        mkdir <name> ==> Creates Directory
+$ mkdir  daws84s                                                         mkdir <name> ==> Creates Directory
 $ ls -l
 
 $ rmdir     ==> Remove empty directory
@@ -65,16 +65,16 @@ $ rm -rf    ==> Recursively forcefully delete the files and folders inside too
 ==============================================================
 CRUD ==> Create Read Update Delete
 
-                                                                 [ec2-user@ip-172-31-6-251 ~]$ touch devops.txt
-                                                                 [ec2-user@ip-172-31-6-251 ~]$ mkdir joindevops
-                                                                 [ec2-user@ip-172-31-6-251 ~]$ ls -l
+                                                                 [ec2-user@ip-172-31-6-251 ~] $ touch devops.txt
+                                                                 [ec2-user@ip-172-31-6-251 ~] $ mkdir joindevops
+                                                                 [ec2-user@ip-172-31-6-251 ~] $ ls -l
 
                                                                  -rw-r--r--. 1 ec2-user ec2-user 0 Apr 30 14:39 devops.txt
                                                                  drwxr-xr-x. 2 ec2-user ec2-user 6 Apr 30 14:39 joindevops
 $ cp <source> <destination>   ==> copy files/folders
-                                                                 [ec2-user@ip-172-31-6-251 ~]$ cp devops.txt joindevops/
-                                                                 [ec2-user@ip-172-31-6-251 ~]$ cd joindevops/
-                                                                 [ec2-user@ip-172-31-6-251 joindevops]$ ls -l
+                                                                 [ec2-user@ip-172-31-6-251 ~] $ cp devops.txt joindevops/
+                                                                 [ec2-user@ip-172-31-6-251 ~] $ cd joindevops/
+                                                                 [ec2-user@ip-172-31-6-251 joindevops] $ ls -l
                                                                  total 0
                                                                  -rw-r--r--. 1 ec2-user ec2-user 0 Apr 30 14:41 devops.txt
 
@@ -83,15 +83,33 @@ $ cp <source> <destination>   ==> copy files/folders
 
 $ mv <source> <destination>   ==> cut and paste
 
-wget <URL>       ==> Downloads the file
-curl <URL>       ==> Shows on the screen
+==============================================================
+>> Goto Github   >> Open file    >> Click on RAW    >> Copy URL
+$ wget <URL>       ==> Downloads the File
+$ ls -l
+$ cat file name    ==> You can see the Output here
 
-cat <file-name> | grep <word-to-search>
-grep <word-to-search> <file>
+$ curl <URL>       ==> Shows on the Screen
 
+==============================================================
+$ grep --help 
+[ec2-user@ip-172-31-6-251 ~] $ cat session-02.txt | grep linux                      Note : cat <file-name> | grep <word-to-search>
+[ec2-user@ip-172-31-6-251 ~] $ grep linux session-02.txt                            Note : grep <word-to-search> <file>
+
+
+==============================================================
 https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt
 
+[ec2-user@ip-172-31-6-251 ~] $ echo "hello world"
+hello world
+
 echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1
+
+[ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/note
+https:
+[ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f7
+heads
+
 
 awk command
 ------------
