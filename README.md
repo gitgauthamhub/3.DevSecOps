@@ -112,11 +112,12 @@ https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt 
 [ec2-user@ip-172-31-6-251 ~] $ echo "hello world"
 hello world
 
-echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1            Note : session-02.txt is File Name its a Example
+echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1            
+Note : session-02.txt is File Name its a Example
 
 [ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/note
 https:
-[ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f7           Note : session-02.txt is File Name its a Example
+[ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f7           
 heads
 [ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1-6      Note : 1/6 Here to show
 https://raw.githubusercontent.com/daws-84s/notes/refs
@@ -124,7 +125,8 @@ https://raw.githubusercontent.com/daws-84s/notes/refs
 
 ==========================
 
-awk command ====== echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'        Note : session-02.txt is File Name its a Example
+awk command ====== echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'        
+Note : session-02.txt is File Name its a Example
 
 [ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'
 https:
