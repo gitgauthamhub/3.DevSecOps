@@ -91,7 +91,7 @@ $ mv <source> <destination>   ==> cut and paste
 
 ==========================
 
->> Goto Github   >> Open file    >> Click on RAW    >> Copy URL
+>> Goto Github   >> Note Open file.txt (only)   >> Click on RAW    >> Copy URL
 $ wget <URL>       ==> Downloads the File
 $ ls -l
 $ cat file name    ==> You can see the Output here
