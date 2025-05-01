@@ -14,15 +14,12 @@ $ exit
 $ cd                                                                         Note : This is User Directory 
 $ ls 
 
-$ cd c/devops/
+$ cd /c/devops/
 $ ssh -i daws-84s/daws-84s ec2-user@44.222.158.108                          Note :  This is called  Relative Path
 
 
-$ sudo su                                                                   Note : $ ==> Normal User
-# exit                                                                      Note : # ==> root  /admin   /super user
-
-$ sudo su - 
-$ pwd     
+$ sudo su -                                                                 Note : $ ==> Normal User                                       
+$ pwd                                                                       Note : # ==> root  /admin   /super user
         /root ==> root user home directory
 # exit 
 
