@@ -69,18 +69,20 @@ $ rm -rf    ==> Recursively forcefully delete the files and folders inside too
 
 CRUD ==> Create Read Update Delete
 
-                                                                 [ec2-user@ip-172-31-6-251 ~] $ touch devops.txt
-                                                                 [ec2-user@ip-172-31-6-251 ~] $ mkdir joindevops
-                                                                 [ec2-user@ip-172-31-6-251 ~] $ ls -l
+[ec2-user@ip-172-31-6-251 ~] $ touch devops.txt
+[ec2-user@ip-172-31-6-251 ~] $ mkdir joindevops
+[ec2-user@ip-172-31-6-251 ~] $ ls -l
 
                                                                  -rw-r--r--. 1 ec2-user ec2-user 0 Apr 30 14:39 devops.txt
                                                                  drwxr-xr-x. 2 ec2-user ec2-user 6 Apr 30 14:39 joindevops
+                                                                 
 $ cp <source> <destination>   ==> copy files/folders
-                                                                 [ec2-user@ip-172-31-6-251 ~] $ cp devops.txt joindevops/
-                                                                 [ec2-user@ip-172-31-6-251 ~] $ cd joindevops/
-                                                                 [ec2-user@ip-172-31-6-251 joindevops] $ ls -l
-                                                                 total 0
-                                                                 -rw-r--r--. 1 ec2-user ec2-user 0 Apr 30 14:41 devops.txt
+
+[ec2-user@ip-172-31-6-251 ~] $ cp devops.txt joindevops/
+[ec2-user@ip-172-31-6-251 ~] $ cd joindevops/
+[ec2-user@ip-172-31-6-251 joindevops] $ ls -l
+total 0
+-rw-r--r--. 1 ec2-user ec2-user 0 Apr 30 14:41 devops.txt
 
                                                                  
 
