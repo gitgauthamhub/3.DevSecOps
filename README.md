@@ -1,5 +1,5 @@
 # 3.DevSecOps
-=============
+==========================
 
 Linux Cmds
 
@@ -23,7 +23,7 @@ $ pwd                                                                       Note
         /root ==> root user home directory
 # exit 
 
-=============
+==========================
 
 command <options> <inputs>
 / ==> root directory
@@ -31,7 +31,7 @@ $ cd /
 $ ls -l                                                                    Note : ls means Long List 
 
 
-=============
+==========================
 
 $ ls           ==> help list info about the FILES
 $ ls -l        ==> long listing format in alphabetical order
@@ -41,8 +41,9 @@ $ ls -ltr      ==> latest at bottom
 $ ls -la       ==> all files including hidden files and folders
 
 
-=============
-                                                                          Note : $ ssh -i /c/devops/daws-84s/daws-84s ec2-user@44.22.158.108 
+==========================
+
+Note : $ ssh -i /c/devops/daws-84s/daws-84s ec2-user@44.22.158.108 
 
 $ touch devops.txt    ==> creates empty file                              Note : touch <file-name>   ==> creates empty file  
   
@@ -54,7 +55,7 @@ $ cat >> devops.txt
 $ cat devops.txt                                                          Note : >   ==> usually called as redirection
 
 
-=============
+==========================
 
 $ mkdir  daws84s                                                         mkdir <name> ==> Creates Directory
 $ ls -l
@@ -64,7 +65,7 @@ $ rm -f     ==> Forcefully removes file
 $ rm -rf    ==> Recursively forcefully delete the files and folders inside too
 
 
-=============
+==========================
 
 CRUD ==> Create Read Update Delete
 
@@ -86,7 +87,7 @@ $ cp <source> <destination>   ==> copy files/folders
 
 $ mv <source> <destination>   ==> cut and paste
 
-=============
+==========================
 
 >> Goto Github   >> Open file    >> Click on RAW    >> Copy URL
 $ wget <URL>       ==> Downloads the File
@@ -95,14 +96,14 @@ $ cat file name    ==> You can see the Output here
 
 $ curl <URL>       ==> Shows on the Screen
 
-=============
+==========================
 
 $ grep --help 
 [ec2-user@ip-172-31-6-251 ~] $ cat session-02.txt | grep linux                      Note : cat <file-name> | grep <word-to-search>
 [ec2-user@ip-172-31-6-251 ~] $ grep linux session-02.txt                            Note : grep <word-to-search> <file>
 
 
-=============
+==========================
 
 https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt
 
@@ -119,7 +120,7 @@ heads
 https://raw.githubusercontent.com/daws-84s/notes/refs
 
 
-=============
+==========================
 
 awk command ====== echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'
 
@@ -129,7 +130,7 @@ https:
 session-02.txt
 
 
-=============
+==========================
 
 log files ==> head -f <log-file>
 log files ==> tail -f <log-file>
