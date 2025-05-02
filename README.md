@@ -57,23 +57,30 @@ $ ls -la       ==> all files including hidden files and folders
 
 Note : $ ssh -i /c/devops/daws-84s/daws-84s ec2-user@44.22.158.108 
 
-$ touch devops.txt    ==> creates empty file                              Note : touch <file-name>   ==> creates empty file  
+$ touch devops.txt    ==> creates empty file                             
+Note : touch <file-name>   ==> creates empty file  
   
-$ cat > devops.txt   ==> type text, enter and ctrl+d                      Note : cat > <file-name> --> type text, enter and  ==> ctrl+d
-$ cat devops.txt                                                          previous content will be replaced
+$ cat > devops.txt   ==> type text, enter and ctrl+d                    
+Note : cat > <file-name> --> type text, enter and  ==> ctrl+d
+
+$ cat devops.txt                                                          
+previous content will be replaced
 
 
 $ cat >> devops.txt 
-$ cat devops.txt                                                          Note : >   ==> usually called as redirection
+$ cat devops.txt                                                         
+Note : >   ==> usually called as redirection
 
 
 ==========================
 
-$ mkdir  daws84s                                                         mkdir <name> ==> Creates Directory
+$ mkdir  daws84s                                                         
 $ ls -l
 
 $ rmdir     ==> Remove empty directory
+
 $ rm -f     ==> Forcefully removes file
+
 $ rm -rf    ==> Recursively forcefully delete the files and folders inside too
 
 
@@ -82,7 +89,9 @@ $ rm -rf    ==> Recursively forcefully delete the files and folders inside too
 CRUD ==> Create Read Update Delete
 
 [ec2-user@ip-172-31-6-251 ~] $ touch devops.txt
+
 [ec2-user@ip-172-31-6-251 ~] $ mkdir joindevops
+
 [ec2-user@ip-172-31-6-251 ~] $ ls -l
 
                                                                  -rw-r--r--. 1 ec2-user ec2-user 0 Apr 30 14:39 devops.txt
@@ -91,12 +100,11 @@ CRUD ==> Create Read Update Delete
 $ cp <source> <destination>   ==> copy files/folders
 
 [ec2-user@ip-172-31-6-251 ~] $ cp devops.txt joindevops/
-[ec2-user@ip-172-31-6-251 ~] $ cd joindevops/
-[ec2-user@ip-172-31-6-251 joindevops] $ ls -l
-total 0
--rw-r--r--. 1 ec2-user ec2-user 0 Apr 30 14:41 devops.txt
 
-                                                                 
+[ec2-user@ip-172-31-6-251 ~] $ cd joindevops/
+
+[ec2-user@ip-172-31-6-251 joindevops] $ ls -l
+
 
 
 $ mv <source> <destination>   ==> cut and paste
@@ -104,8 +112,11 @@ $ mv <source> <destination>   ==> cut and paste
 ==========================
 
 >> Goto Github   >> Note Open file.txt (only)   >> Click on RAW    >> Copy URL
+
 $ wget <URL>       ==> Downloads the File
+
 $ ls -l
+
 $ cat file name    ==> You can see the Output here
 
 $ curl <URL>       ==> Shows on the Screen
@@ -113,13 +124,18 @@ $ curl <URL>       ==> Shows on the Screen
 ==========================
 
 $ grep --help 
-[ec2-user@ip-172-31-6-251 ~] $ cat session-02.txt | grep linux                      Note : cat <file-name> | grep <word-to-search>
-[ec2-user@ip-172-31-6-251 ~] $ grep linux session-02.txt                            Note : grep <word-to-search> <file>
+
+[ec2-user@ip-172-31-6-251 ~] $ cat session-02.txt | grep linux                      
+Note : cat <file-name> | grep <word-to-search>
+
+[ec2-user@ip-172-31-6-251 ~] $ grep linux session-02.txt                           
+Note : grep <word-to-search> <file>
 
 
 ==========================
 
-https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt      Note : session-02.txt is File Name its a Example
+https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt      
+Note : session-02.txt is File Name its a Example
 
 [ec2-user@ip-172-31-6-251 ~] $ echo "hello world"
 hello world
@@ -129,8 +145,10 @@ Note : session-02.txt is File Name its a Example
 
 [ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/note
 https:
+
 [ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f7           
 heads
+
 [ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | cut -d "/" -f1-6      Note : 1/6 Here to show
 https://raw.githubusercontent.com/daws-84s/notes/refs
 
@@ -142,6 +160,7 @@ Note : session-02.txt is File Name its a Example
 
 [ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $1F}'
 https:
+
 [ec2-user@ip-172-31-6-251 ~] $ echo https://raw.githubusercontent.com/daws-84s/notes/refs/heads/main/session-02.txt | awk -F "/" '{print $NF}'
 session-02.txt
 
@@ -149,10 +168,13 @@ session-02.txt
 ==========================
 
 log files ==> head -f <log-file>
+
 log files ==> tail -f <log-file>
+
 find <where to search> -name <file-name>
 
 $ find . -name "users"
+
 $ find . -name "*se*"
 
 vim ==> visually improved
