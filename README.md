@@ -297,7 +297,7 @@ Note : usermod -aG testers grk  // Here Captial G is a Secondary group
 ==> Delete Group also
 
 # cd /home/grk                     
-==> Dekete Directory also
+==> Delete Directory also
 # cd
 # id grk 
 
