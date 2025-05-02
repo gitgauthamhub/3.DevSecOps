@@ -41,10 +41,15 @@ Note : ls means Long List
 ==========================
 
 $ ls           ==> help list info about the FILES
+
 $ ls -l        ==> long listing format in alphabetical order
+
 $ ls -lr       ==> long li sting format in reverse alphabetical order
+
 $ ls -lt       ==> latest files on top
+
 $ ls -ltr      ==> latest at bottom
+
 $ ls -la       ==> all files including hidden files and folders
 
 
