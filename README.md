@@ -233,6 +233,55 @@ In Linux wen you create user, By default group also will be created with the sam
 # cd
 # id grk 
 
+# useradd grk 
+# id grk
+
+# usermod -g devops grk
+# usermod -aG devops grk grk
+# usermod -aG testers grk
+# id grk
+
+# gpasswd -d grk testers
+# id grk                         ==> Compulsory One group must 
+
+
+# usermod -g grk grk
+# id grk 
+# userdel grk
+# cat /etc/group 
+
+   
+How to login User ?
+
+# useradd grk
+# passwd  grk                 ==> Give password
+
+>> Goto new Duplicate window
+$ ssh grk@3.231.56.105                Note : Permission are Denied 
+
+>> Goto old Gitbash Window            Note : In Linux by Default Login to Keys only // Don't use passwords
+
+# vim/etc/ssh/sshd_config             Note : If you change any Behaviour you need to changes Config files // default process
+:?Password = xxxx                  
+                                     Note : " Password Authencation no " 
+ >>  i                               Note :  Now change " yes "
+
+ >> esc   >> :wq!   >> enter
+
+
+# sshd -t                            Note : Check for testing any changes here done or not
+
+# systemctl restart sshd 
+
+>> Goto new Duplicate window
+# ssh grk@3.231.56.105 
+:password = xxxx         
+                  
+
+
+
+
+
 
 
 
