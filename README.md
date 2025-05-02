@@ -191,12 +191,14 @@ Goto Gitbash
 vim editor ==> 3 modes - Esc mode, Command mode, Insect mode
 
 $ vim devops.txt  
-  press "i" , press "Esc" , ":q!"      Note : WithOut Saving 
+  press "i" , press "Esc" , ":q!"      
+  Note : WithOut Saving 
 
 $ vim devops.txt 
   press "i" 
   This is joindevops session
-  press "Esc" , ":wq!"                 Note : Its Saving 
+  press "Esc" , ":wq!"                 
+  Note : Its Saving 
 
 ==========================
 $ sudo su -
@@ -212,21 +214,36 @@ Note : Now ec2-user  pop display
 :?/sbin                                
 ==> Search for the word from Bottom
 
-:noh                                   ==> No Highlight
-:set nu                                ==> Numbers 
-:set nonu                              ==> No Number 
+:noh                                   
+==> No Highlight
 
-:27d                                   ==> Deleted particular 27th row
-:%d                                    ==> Total data deleted
-:q!                                    ==> Exit without saving
+:set nu                               
+==> Numbers 
 
-:4s/sbin/SBIN                          ==> Replace sbin place SBIN  Note: 1st occurence 
+:set nonu                             
+==> No Number 
+
+:27d                                  
+==> Deleted particular 27th row
+
+:%d                                   
+==> Total data deleted
+
+:q!                                    
+==> Exit without saving
+
+:4s/sbin/SBIN                          
+==> Replace sbin place SBIN  Note: 1st occurence 
+
 :7s/sbin/SBIN
 
-:8s/sbin/SBIN/g                        ==> All occurance in that line  will be Captial letters
-:%s/sbin/SBIN/g                        ==> All occurance in the file will be Capital letters
+:8s/sbin/SBIN/g                      
+==> All occurance in that line  will be Captial letters
 
-U                                      ==> Escmode
+:%s/sbin/SBIN/g                        
+==> All occurance in the file will be Capital letters
+
+U  ==> Escmode
 
 ==========================
 
