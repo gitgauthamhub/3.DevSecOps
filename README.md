@@ -274,22 +274,30 @@ In Linux wen you create user, By default group also will be created with the sam
 # cat /etc/passwd 
 # cat /etc/group
 
-# groupadd devops                    Note : Now groupadd devops // devops group will be created
+# groupadd devops                    
+Note : Now groupadd devops // devops group will be created
+
 # cat /etc/group
 
-# usermod -g devops grk              Note : usermod -g devops grk   // Here small -g is a primary group
+# usermod -g devops grk              
+Note : usermod -g devops grk   // Here small -g is a primary group
 # id grk 
 
 # groupadd testers 
-# usermod -aG testers grk            Note : usermod -aG testers grk  // Here Captial G is a Secondary group 
+# usermod -aG testers grk           
+Note : usermod -aG testers grk  // Here Captial G is a Secondary group 
 # id grk
 
-# userdel grk                       ==> Deleted User
+# userdel grk                       
+==> Deleted User
 # id grk
 # cat /etc/group 
 
-# groupdel grk                      ==> Delete Group also
-# cd /home/grk                      ==> Dekete Directory also
+# groupdel grk                      
+==> Delete Group also
+
+# cd /home/grk                     
+==> Dekete Directory also
 # cd
 # id grk 
 
@@ -302,7 +310,8 @@ In Linux wen you create user, By default group also will be created with the sam
 # id grk
 
 # gpasswd -d grk testers
-# id grk                         ==> Compulsory One group must 
+# id grk                         
+==> Compulsory One group must 
 
 
 # usermod -g grk grk
@@ -314,22 +323,29 @@ In Linux wen you create user, By default group also will be created with the sam
 How to login User ?
 
 # useradd grk
-# passwd  grk                 ==> Give password
+# passwd  grk                 
+==> Give password
 
 >> Goto new Duplicate window
-$ ssh grk@3.231.56.105                Note : Permission are Denied 
+$ ssh grk@3.231.56.105
+>>  Note : Permission are Denied 
 
->> Goto old Gitbash Window            Note : In Linux by Default Login to Keys only // Don't use passwords
+>> Goto old Gitbash Window
+>>  Note : In Linux by Default Login to Keys only // Don't use passwords
 
-# vim/etc/ssh/sshd_config             Note : If you change any Behaviour you need to changes Config files // default process
+# vim/etc/ssh/sshd_config            
+>> Note : If you change any Behaviour you need to changes Config files // default process
 :?Password = xxxx                  
-                                     Note : " Password Authencation no " 
- >>  i                               Note :  Now change " yes "
+
+>> Note : " Password Authencation no " 
+>>  i
+>> Note :  Now change " yes "
 
  >> esc   >> :wq!   >> enter
 
 
-# sshd -t                            Note : Check for testing any changes here done or not
+# sshd -t                           
+Note : Check for testing any changes here done or not
 
 # systemctl restart sshd 
 
