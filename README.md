@@ -8,19 +8,25 @@ Goto the path : $ pwd  >> $ ls -l
 
 $ ssh -i daws-84s ec2-user@44.222.158.108
 
-$ ssh -i /c/devops/daws-84s/daws-84s ec2-user@44.22.158.108                  Note :  This is called  Full Path
+$ ssh -i /c/devops/daws-84s/daws-84s ec2-user@44.22.158.108                 
+Note :  This is called  Full Path
 
 $ exit 
-$ cd                                                                         Note : This is User Directory 
+$ cd                                                                         
+Note : This is User Directory 
 $ ls 
 
 $ cd /c/devops/
-$ ssh -i daws-84s/daws-84s ec2-user@44.222.158.108                          Note :  This is called  Relative Path
+$ ssh -i daws-84s/daws-84s ec2-user@44.222.158.108                          
+Note :  This is called  Relative Path
 
 
-$ sudo su -                                                                 Note : $ ==> Normal User                                       
-$ pwd                                                                       Note : # ==> root  /admin   /super user
-        /root ==> root user home directory
+$ sudo su -                                                                
+Note : $ ==> Normal User                                       
+$ pwd         
+
+Note : # ==> root  /admin   /super user
+/root ==> root user home directory
 # exit 
 
 ==========================
@@ -28,7 +34,8 @@ $ pwd                                                                       Note
 command <options> <inputs>
 / ==> root directory
 $ cd /
-$ ls -l                                                                    Note : ls means Long List 
+$ ls -l                                                                    
+Note : ls means Long List 
 
 
 ==========================
