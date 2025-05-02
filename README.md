@@ -181,7 +181,11 @@ vim ==> visually improved
 
 ============================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
-Command Mode ==> :q ==> quit the file, :wq ==> write and quit, :q! ==> exit without saving, wq! ==> Force write and quit
+Command Mode ==>
+:q ==> quit the file, 
+:wq ==> write and quit, 
+:q! ==> exit without saving, 
+:wq! ==> Force write and quit
 
 Goto Gitbash
 vim editor ==> 3 modes - Esc mode, Command mode, Insect mode
@@ -195,13 +199,18 @@ $ vim devops.txt
   press "Esc" , ":wq!"                 Note : Its Saving 
 
 ==========================
-
+$ sudo su -
 cp /etc/passwd  users
 vim users
 
-:/ec2-user                             Note : Now ec2-user  pop display 
-:/sbin                                 ==> Search for the word from Top
-:?/sbin                                ==> Search for the word from Bottom
+:/ec2-user                             
+Note : Now ec2-user  pop display 
+
+:/sbin                               
+==> Search for the word from Top
+
+:?/sbin                                
+==> Search for the word from Bottom
 
 :noh                                   ==> No Highlight
 :set nu                                ==> Numbers 
