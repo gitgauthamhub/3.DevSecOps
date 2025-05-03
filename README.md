@@ -13,7 +13,7 @@ Note :  This is called  Full Path
 
 $ exit 
 $ cd                                                                         
-Note : This is User Directory 
+Note : This is User Directory
 $ ls 
 
 $ cd /c/devops/
