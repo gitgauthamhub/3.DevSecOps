@@ -1,4 +1,4 @@
-# 3.DevSecOps
+# 3.DEVSECOPS
 ================
 
 Linux Cmds
